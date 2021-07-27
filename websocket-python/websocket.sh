@@ -16,19 +16,19 @@ cd
 cd /etc/systemd/system/
 wget -O /etc/systemd/system/ws-openssh.service https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-openssh.service
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-dropbear.service
+#wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-dropbear.service
 #System SSL/TLS Websocket-SSH Python
 wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-stunnel.service
 ##System Websocket-OpenVPN Python
-wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-ovpn.service
+#wget -O /etc/systemd/system/ws-ovpn.service https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-ovpn.service
 
 #Install Script Websocket-SSH Python
 cd
 cd /usr/local/bin/
 wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-openssh && chmod +x /home/admin/ws-openssh
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-dropbear && chmod +x /home/admin/bin/ws-dropbear
+#wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-dropbear && chmod +x /home/admin/bin/ws-dropbear
 wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-stunnel && chmod +x /home/admin/ws-stunnel
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-ovpn && chmod +x /home/admin/ws-ovpn
+#wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/Autoscript/main/${namafolder}/ws-ovpn && chmod +x /home/admin/ws-ovpn
 #
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-openssh
