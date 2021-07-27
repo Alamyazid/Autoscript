@@ -11,7 +11,7 @@ MYIP2="s/xxxxxxxxx/$MYIP/g";
 #wget https://github.com/${GitUser}/
 GitUser="Alamyazid"
 #wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/${GitUser}/Autoscript/main/install/ssh-only.sh && chmod +x ssh-only.sh && screen -S ssh-only.sh ./ssh-only.sh
+wget https://raw.githubusercontent.com/Alamyazid/Autoscript/main/install/ssh-only.sh && chmod +x ssh-only.sh && screen -S ssh-only.sh ./ssh-only.sh
 wget https://raw.githubusercontent.com/Alamyazid/Autoscript/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
 #wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #wget https://raw.githubusercontent.com/${GitUser}/test1/main/install/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
