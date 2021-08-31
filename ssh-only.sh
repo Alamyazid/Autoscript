@@ -282,6 +282,7 @@ wget -O autokill "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/au
 wget -O ceklim "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/tendang.sh"
 wget -O clear-log "https://raw.githubusercontent.com/Alamyazid/Autoscript/main/clear-log.sh"
+wget https://raw.githubusercontent.com/Alamyazid/Autoscript/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
 
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 
