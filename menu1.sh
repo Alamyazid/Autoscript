@@ -1,6 +1,21 @@
 #!/bin/bash
 #Menu
-clear
+if [[ -e /etc/debian_version ]]; then
+        OS=debian
+        RCLOCAL='/etc/rc.local'
+elif [[ -e /etc/centos-release || -e /etc/redhat-release ]]; then
+        OS=centos
+        RCLOCAL='/etc/rc.d/rc.local'
+        chmod +x /etc/rc.d/rc.local
+else
+        echo "It looks like you are not running this installer on Debian, Ubunt>        exit
+fi
+color1='\e[031;1m'
+color2='\e[34;1m'
+color3='\e[0m'
+echo "--------------- Welcome To  Script ---------------"
+        echo "-------------By TuanYZ ----------------"
+
 echo -e "* menu              : Menampilkan daftar perintah"
 echo -e "* usernew           : Membuat akun SSH & OpenVPN"
 echo -e "* trial             : Membuat akun trial"
